@@ -2,4 +2,9 @@
     <div class="roster-img" style="background-image:url({{ .image }});"></div>
     <h3 class="roster-name">{{ .name }}</h3>
     <p class="roster-title">{{ .title }}</p>
+    <div class="roster-filter">
+        <div class="icon" style="display: {{ if in .radio "yes" }}inherit{{ else }}none{{end}};"><i class="fas fa-broadcast-tower"></i></div>
+        <div class="icon" style="display: inherit;"><i class="fas fa-compact-disc"></i></div>
+        <div class="icon" style="display: {{ if in .producer "yes" }}inherit{{ else }}none{{end}};"><i class="fas fa-sliders-h"></i></div>
+    </div>
 </div>
