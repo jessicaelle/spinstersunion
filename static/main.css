@@ -1,7 +1,14 @@
 p {
+    font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     margin: 0 1em;
     color: #444;
+}
+
+h1, h3 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
 .center {
@@ -35,7 +42,7 @@ svg {
 .headline {
     max-width: 800px;
     font-size: 20px;
-    line-height: 1.25;
+    line-height: 1.5;
     text-align: center;
 }
 
@@ -65,4 +72,68 @@ svg {
     padding: 12px;
     color: #444;
     font-size: 20px;
+}
+
+
+.roster-main {
+    background: #111;
+    display: flex;
+    flex-direction: column;
+}
+
+.roster-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+}
+
+.roster-menu h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.roster-filter {
+    display: flex;
+}
+
+.roster-filter i {
+    padding: 12px;
+    color: white;
+}
+
+.roster-grid {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-self: center;
+}
+
+.roster-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 1em;
+    flex: 0 2 250px;
+}
+
+.roster-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: darkgrey;
+    margin-bottom: 1em;
+    background-position: center center;
+    background-size: cover;
+}
+
+.roster-name {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: .5em;
 }
