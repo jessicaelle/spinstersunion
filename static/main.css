@@ -1,4 +1,4 @@
-p {
+p , a {
     font-family: 'Maven Pro', sans-serif;
     font-size: 16px;
     margin: 0 1em;
@@ -26,6 +26,29 @@ svg {
 #Logo-Core {
     fill: #444;
 }
+
+/*** NAVIGATION ***/
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+
+/*** REST OF THE FUCKING OWL ***/
 
 .hero {
     width: 100%;
