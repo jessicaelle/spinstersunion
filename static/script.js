@@ -1,19 +1,34 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+$(document).ready(function(){
+  
+  // Even when the window is resized, run this code.
+  $(window).resize(function(){
+    
+    // Variables
+    var windowHeight = $(window).height();
+    
+    // Find the value of 90% of the viewport height
+    var ninetypercent = .9 * windowHeight;
+    
+    // When the document is scrolled ninety percent, toggle the classes
+    // Does not work in iOS 7 or below
+    // Hasn't been tested in iOS 8
+    $(document).scroll(function(){
+      
+      // Store the document scroll function in a variable
+      var y = $(this).scrollTop();
+      
+      // If the document is scrolled 90%
+      if( y > ninetypercent) {
+        
+        // Add the "sticky" class
+        $('nav').addClass('sticky');
+      } else {
+        // Else remove it.
+        $('nav').removeClass('sticky');
+      }
+    });
 
-// Get the header
-var logo = document.getElementById("logo");
-
-// Get the offset position of the navbar
-var sticky = logo.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    logo.classList.add("sticky");
-  } else {
-    logo.classList.remove("sticky");
-  }
-}
-
-console.log("script is loading")
+  // Call it on resize.
+  }).resize();
+  
+}); // jQuery
