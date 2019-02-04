@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="UTF-8">
         <title>{{ .Title }}</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,700|Open+Sans:400,400i" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/main.css" />
-    </head>
+        <!-- <link rel="stylesheet" type="text/css" href="/main.css" /> -->
+    
+        {{ $style := resources.Get "/css/main.scss" | toCSS | postCSS }}
+        {{ $sheet := $style | minify | fingerprint }}        
+        <link type="text/css" rel="stylesheet" href="{{ $sheet.RelPermalink }}" integrity="{{ $sheet.Data.Integrity }}" media="screen"/>
 
+    </head>
     <body>
 

@@ -1,0 +1,60 @@
+svg {
+    width: 125px;
+    height: 125px;
+    margin: 2em;
+}
+
+#Logo-Core {
+    fill: #444;
+}
+
+// HERO
+
+.hero {
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+    font-size: 9.5vw;
+    color: rgb(255, 0, 242);
+    text-align: center;
+    mix-blend-mode: difference;
+    animation: bounce .3s ease infinite alternate;
+    padding-left: 3vw;
+}
+
+// ABOUT
+
+.about {
+    padding: 4em 0;
+    background-color: white;
+    flex-direction: column;
+}
+
+.headline {
+    max-width: 800px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.about button {
+    color: #444;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px 36px;
+    margin: 2em;
+    border: 2px solid #444;
+    background: white;
+    cursor: pointer;
+}

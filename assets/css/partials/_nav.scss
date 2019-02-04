@@ -1,0 +1,44 @@
+nav {
+    position: relative;
+    height: 100px;
+    background: white;
+}
+
+.nav-links {
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    position: absolute;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 1.5em;
+    }
+
+    li a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.nav-logo {
+    width: 100%;
+    position: absolute;
+    margin: 15px 0;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    background-image: linear-gradient(yellow, red), url("/img/logo.svg");
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: contain;
+}

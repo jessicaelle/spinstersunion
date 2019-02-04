@@ -1,0 +1,25 @@
+// Umbrella Styles
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+// Loadout
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/type';
+@import 'partials/nav';
+@import 'partials/home';
+@import 'partials/roster';
+@import 'partials/contact';
+@import 'partials/footer';

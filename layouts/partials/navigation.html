@@ -1,16 +1,18 @@
-<nav>
-    <ul>
-        <li><a href="/roster">Roster</a></li>
-        <li><a href="/membership">Join</a></li>
-    </ul>
-    <ul>
-        <li><a href="/booking">Booking</a></li>
-        <li><a href="/contact">Contact</a></li> 
-    </ul>
+<nav class="flex">
+    <div class="nav-links flex">
+        <ul class="flex">
+            <li><a href="/roster">Roster</a></li>
+            <li><a href="/membership">Join</a></li>
+        </ul>
+        <ul class="flex">
+            <li><a href="/booking">Booking</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="nav-logo flex center">
+        <div class="logo"></div>
+    </div>
 </nav>
 
-<div class="logo-overlay">
-    <a href="/"><div class="nav-logo"></div></a>
-</div>
 
 {{ partial "spacer.html" . }}

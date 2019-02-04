@@ -1,0 +1,13 @@
+h1, h2, h3, p, a {
+    font-family: $maven;
+}
+
+p, a, span {
+    font-size: 16px;
+    color: $light;
+}
+
+h1, h3 {
+    font-weight: 700;
+    color: white;
+}
