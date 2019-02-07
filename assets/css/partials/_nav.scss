@@ -1,8 +1,10 @@
 nav {
     position: relative;
-    height: 100px;
-    background: white;
+    height: 50px;
+    @include rainbow;
 }
+
+@include rainbow-keyframes;
 
 .nav-links {
     width: 100%;
@@ -22,14 +24,15 @@ nav {
 
     li a {
         text-decoration: none;
-        cursor: pointer;
+        // cursor: pointer;
     }
 }
 
 .nav-logo {
-    width: 100%;
+    width: 200px;
     position: absolute;
-    margin: 15px 0;
+    left: 50%;
+    margin-left: -100px;
 }
 
 .logo {
@@ -37,8 +40,11 @@ nav {
     height: 150px;
     border-radius: 50%;
     border: 10px solid white;
-    background-image: linear-gradient(yellow, red), url("/img/logo.svg");
+    background-image: linear-gradient(pink, gold), url("/img/logo.svg");
     background-blend-mode: overlay;
     background-position: center;
     background-size: contain;
+    z-index: 100;
+    margin-top: 10px;
 }
+

@@ -1,36 +1,7 @@
 svg {
     width: 125px;
     height: 125px;
-    margin: 2em;
-}
-
-#Logo-Core {
-    fill: #444;
-}
-
-// OLD HERO
-
-.hero {
-    width: 100%;
-    height: auto;
-    background-color: rgb(0, 0, 0);
-}
-
-video {
-    width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    position: absolute;
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 700;
-    font-size: 9.5vw;
-    color: rgb(255, 0, 242);
-    text-align: center;
-    mix-blend-mode: difference;
-    animation: bounce .3s ease infinite alternate;
-    padding-left: 3vw;
+    // margin: 2em;
 }
 
 // ABOUT
@@ -42,7 +13,7 @@ video {
 }
 
 .headline {
-    max-width: 800px;
+    max-width: 900px;
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
