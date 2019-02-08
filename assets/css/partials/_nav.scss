@@ -36,15 +36,17 @@ nav {
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
-    border: 10px solid white;
+    border: 2px solid white;
     background-image: linear-gradient(pink, gold), url("/img/logo.svg");
     background-blend-mode: overlay;
     background-position: center;
     background-size: contain;
     z-index: 100;
     margin-top: 10px;
+    @include spin;
 }
 
+@include spin-keyframes;

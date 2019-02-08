@@ -20,12 +20,18 @@ svg {
 }
 
 .about button {
-    color: #444;
+    color: white;
     font-size: 16px;
     text-transform: uppercase;
     padding: 12px 36px;
-    margin: 2em;
-    border: 2px solid #444;
-    background: white;
+    margin-top: 2em;
+    background: red;
     cursor: pointer;
+    border: none;
+}
+
+.about button:hover {
+    color: black;
+    background: gold;
+    transition: all 0.2s ease 0s;
 }

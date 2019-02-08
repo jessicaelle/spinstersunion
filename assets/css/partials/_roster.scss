@@ -1,8 +1,9 @@
 
 .roster-main {
-    background: #111;
+    // background: #111;
     display: flex;
     flex-direction: column;
+    padding: 2em;
 }
 
 .roster-menu {
@@ -13,7 +14,7 @@
 }
 
 .roster-menu h1 {
-    color: white;
+    color: black;
     text-transform: uppercase;
 }
 
@@ -46,14 +47,16 @@
 }
 
 .roster-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 5px solid black;
     background-color: white;
     margin-bottom: 1em;
     background-position: center center;
     background-size: cover;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 }
 
 
@@ -62,4 +65,5 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: .5em;
+    color: black;
 }

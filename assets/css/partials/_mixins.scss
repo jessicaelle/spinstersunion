@@ -1,3 +1,5 @@
+// RAINBOW GRADIENT
+
 @mixin rainbow {
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3);
 	background-size: 2000% 2000%;
@@ -52,4 +54,26 @@
           background-position: 50% 0%
         }
       }
+}
+
+// SPINNING TO THE RIGHT
+
+@mixin spin {
+    animation: spin 30s linear infinite; 
+    -webkit-animation: spin 30s linear infinite;
+	-z-animation: spin 30s linear infinite;
+	-o-animation: spin 30s linear infinite;
+}
+
+@mixin spin-keyframes {
+    
+    @-moz-keyframes spin {
+        100% {-moz-transform: rotate(360deg);}
+    }
+    @-webkit-keyframes spin {
+        100% {-webkit-transform: rotate(360deg);}
+    }
+    @keyframes spin {
+        100% {transform:rotate(360deg);}
+    }    
 }

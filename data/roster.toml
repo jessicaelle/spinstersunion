@@ -6,35 +6,23 @@ producer = "yes"
 
 [[members]]
 name = "Blythe of the Ball"
-image = "/img/logo.svg"
+image = "blythe-of-the-ball.jpg"
 title = "DJ"
 radio = "yes"
 
 [[members]]
 name = "DJ Bombshell"
-image = "/img/logo.svg"
+image = "dj-bombshell.jpg"
 title = "DJ"
-
-[[members]]
-name = "CamJam"
-image = "/img/logo.svg"
-title = "DJ"
-radio = "yes"
-
-[[members]]
-name = "Cave Dwlr"
-image = "/img/logo.svg"
-title = "DJ / Producer"
-producer = "yes"
 
 [[members]]
 name = "FILO"
-image = "/img/logo.svg"
+image = "filo.jpg"
 title = "DJ"
 
 [[members]]
 name = "Ghouligan"
-image = "/img/logo.svg"
+image = "ghouligan.jpg"
 title = "DJ"
 
 [[members]]
@@ -44,16 +32,20 @@ title = "DJ"
 radio = "yes"
 
 [[members]]
-name = "Kara Richardson"
-image = "/img/logo.svg"
-title = "DJ"
+name = "Kim Sorise"
+image = "kim-sorise.jpg"
+title = "DJ / Cofounder"
 radio = "yes"
 
 [[members]]
-name = "Kim Sorise"
-image = "/img/logo.svg"
-title = "DJ / Cofounder"
-radio = "yes"
+name = "Lisa Foster"
+image = ""
+title = "DJ"
+
+[[members]]
+name = "Lo Watt"
+image = "lo-watt.jpg"
+title = "DJ"
 
 [[members]]
 name = "DJ Power Trash"
@@ -78,5 +70,10 @@ title = "DJ"
 
 [[members]]
 name = "DJ Syimone"
-image = "/img/logo.svg"
+image = "dj-syimone.jpg"
+title = "DJ"
+
+[[members]]
+name = "Quinette Connor"
+image = ""
 title = "DJ"
