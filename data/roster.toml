@@ -43,15 +43,9 @@ image = ""
 title = "DJ"
 
 [[members]]
-name = "Lo Watt"
+name = "Lo"
 image = "lo-watt.jpg"
 title = "DJ"
-
-[[members]]
-name = "DJ Power Trash"
-image = "/img/logo.svg"
-title = "DJ"
-radio = "yes"
 
 [[members]]
 name = "Regale"
@@ -59,8 +53,13 @@ image = "/img/logo.svg"
 title = "DJ"
 
 [[members]]
-name = "DJ Samosa"
-image = "/img/logo.svg"
+name = "DJ Roya"
+image = ""
+title = "DJ"
+
+[[members]]
+name = "DJ Slim Thicc"
+image = ""
 title = "DJ"
 
 [[members]]
@@ -69,11 +68,6 @@ image = "/img/logo.svg"
 title = "DJ"
 
 [[members]]
-name = "DJ Syimone"
-image = "dj-syimone.jpg"
-title = "DJ"
-
-[[members]]
-name = "Quinette Connor"
+name = "Quinnette"
 image = ""
 title = "DJ"

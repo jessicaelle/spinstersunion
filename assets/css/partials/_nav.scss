@@ -1,16 +1,19 @@
-nav {
+.nav-container {
     position: relative;
-    height: 50px;
+    width: 100%;
+}
+
+nav {
     @include rainbow;
+    padding: 1em;
 }
 
 @include rainbow-keyframes;
 
 .nav-links {
-    width: 100%;
     justify-content: space-between;
-    align-self: center;
-    position: absolute;
+    align-items: center;
+    font-size: 16px;
 
     ul {
         list-style: none;
@@ -19,14 +22,16 @@ nav {
     li {
         text-transform: uppercase;
         font-weight: 700;
-        margin: 0 1.5em;
+        // margin: 0 1.5em;
+        // padding: 1em;
     }
 
     li a {
         text-decoration: none;
-        // cursor: pointer;
     }
 }
+
+
 
 .nav-logo {
     width: 200px;
@@ -36,16 +41,16 @@ nav {
 }
 
 .logo {
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 2px solid white;
     background-image: linear-gradient(pink, gold), url("/img/logo.svg");
     background-blend-mode: overlay;
     background-position: center;
     background-size: contain;
-    z-index: 100;
-    margin-top: 10px;
+    z-index: 200;
+    margin-top: 1em;
     @include spin;
 }
 

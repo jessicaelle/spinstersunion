@@ -77,3 +77,44 @@
         100% {transform:rotate(360deg);}
     }    
 }
+
+// HERO TEXT FLIPPEROO
+
+@mixin hero {
+	-webkit-animation: hero 60s linear NaNs infinite ;
+	animation: hero 60s linear NaNs infinite ;
+}
+
+@mixin hero-keyframes {
+
+    @-webkit-keyframes hero {
+    0% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+        -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+    }
+    100% {
+        -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+    }
+    }
+    @keyframes hero {
+        0% {
+            -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+        }
+        50% {
+            -webkit-transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+            transform: scale(0.5) rotate3d(-1, 1, 0, 180deg);
+        }
+        100% {
+            -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+            transform: scale(1) rotate3d(-1, 1, 0, 360deg);
+        }
+    }
+}
+
+  
