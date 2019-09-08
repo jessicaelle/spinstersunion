@@ -1,12 +1,10 @@
 .hero {
 	display: flex;
-	// background-color: white;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	width: 100%;
 	height:100vh;
-	isolation: isolate;
 	overflow: hidden;
 }
 
@@ -27,10 +25,8 @@
     height: 275px;
     border-radius: 50%;
 	background-image: url("/img/logo-outline-white.svg");
-	// background-blend-mode: overlay;
     background-size: contain;
     z-index: 200;
-	// mix-blend-mode: screen;
 	@include spin;
 }
 
