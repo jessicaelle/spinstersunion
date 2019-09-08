@@ -1,5 +1,6 @@
 .hero {
 	display: flex;
+	// background-color: white;
 	align-items: center;
 	justify-content: center;
 	position: relative;
@@ -25,12 +26,14 @@
     width: 275px;
     height: 275px;
     border-radius: 50%;
-    border: 5px solid white;
-	background-image: linear-gradient(white,whitesmoke), url("/img/logo.svg");
-    background-blend-mode: overlay;
+	border: 5px solid white;
+	background-color: white;
+	// background-image: linear-gradient(white,whitesmoke), url("/img/logo.svg");
+	background-image: url("/img/logo.svg");
+	// background-blend-mode: overlay;
     background-size: contain;
     z-index: 200;
-	mix-blend-mode: screen;
+	// mix-blend-mode: screen;
 	@include spin;
 }
 
