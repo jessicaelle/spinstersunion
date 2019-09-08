@@ -1,14 +1,36 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50vw;
-    background: #111;
+    width: 100%;
+    background: white;
+    text-align: center;
 }
 
-.contact form {
+form {
+    margin: 1em;
+    border: 2px solid $dark;
+    width: 300px;
+    padding: 2em;
+}
+
+.form-row {
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    // justify-content: center;
+    width: 100%;
+    margin: 5px;
+    flex: 1;
+}
+
+input, textarea {
+    background: lightgrey;
+    border: none;
+    padding: 0;
+    // height: 20px;
+}
+
+.honey {
+    display: none;
+}
+
+.submit {
+    margin-top: 2em;
 }

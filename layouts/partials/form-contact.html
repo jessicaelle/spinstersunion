@@ -1,12 +1,9 @@
 
-<form id="contact-form" name="contact-form" action="/thanks" netlify-honeypot="honey" method="POST" netlify>
+<form id="contact-form" class="flex column center" name="contact-form" action="/thanks" netlify-honeypot="honey" method="POST" netlify>
 
     <div class="form-row">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname">
-        
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname">
+        <label for="name">Name</label>
+        <input type="text" name="name">
     </div>
 
     <div class="form-row">
@@ -19,21 +16,11 @@
         <textarea name="message"></textarea>
     </div>
 
-    <div class="form-row">
+    <div class="form-row honey">
         <label for="honey">Don't fill this out if you're human</label>
         <input type="text" id="honey" name="honey"/>
     </div>
 
-    <input type="submit">
+    <input class="submit" type="submit">
 
 </form>
-
-
-
-
-
-
-<label for="start">Start date:</label>
-<input type="date" id="start" name="booking-gate"
-       value="2019-07-22"
-       min="2019-01-01" max="2030-01-01">

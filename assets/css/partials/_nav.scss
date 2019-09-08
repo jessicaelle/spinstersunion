@@ -1,11 +1,13 @@
 .nav-container {
     position: relative;
     width: 100%;
+    // margin-bottom: 125px;
 }
 
 nav {
     @include rainbow;
     padding: 1em;
+    margin-top: -17px;
 }
 
 @include rainbow-keyframes;
@@ -23,11 +25,12 @@ nav {
         text-transform: uppercase;
         font-weight: 700;
         // margin: 0 1.5em;
-        // padding: 1em;
+        padding: .5em;
     }
 
     li a {
         text-decoration: none;
+        color: white;
     }
 }
 
@@ -45,12 +48,16 @@ nav {
     height: 100px;
     border-radius: 50%;
     border: 2px solid white;
-    background-image: linear-gradient(pink, gold), url("/img/logo.svg");
+    background-image: linear-gradient(white, white), url("/img/logo.svg");
     background-blend-mode: overlay;
     background-position: center;
     background-size: contain;
     z-index: 200;
     margin-top: 1em;
+    // mix-blend-mode: screen;
+    -webkit-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -15px rgba(0,0,0,0.75);
     @include spin;
 }
 
