@@ -26,10 +26,7 @@
     width: 275px;
     height: 275px;
     border-radius: 50%;
-	border: 5px solid white;
-	background-color: white;
-	// background-image: linear-gradient(white,whitesmoke), url("/img/logo.svg");
-	background-image: url("/img/logo.svg");
+	background-image: url("/img/logo-outline-white.svg");
 	// background-blend-mode: overlay;
     background-size: contain;
     z-index: 200;
@@ -38,3 +35,10 @@
 }
 
 @include spin-keyframes;
+
+@media screen and (min-width: 768px){
+	.new-logo {
+		width: 350px;
+		height: 350px;
+	}
+}
