@@ -1,112 +1,3 @@
-// HERO VIDEO
-
-.video-container {
-	position: relative;
-	width: 100%;
-	height:100vh;
-	overflow: hidden;
-	background-color: steelblue;
-}
-
-video {
-position: absolute;
-  top: 50%; 
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%; 
-  min-height: 100%; 
-  width: auto; 
-  height: auto;
-  -webkit-filter: saturate(1.2);
-  filter: saturate(1.2);
-}
-
-.overlay {
-	// background: gold;
-	top: 0; right: 0; bottom: 0; left: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	mix-blend-mode: overlay;
-}
-
-.overlay-desc {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	// background: rgba(0,0,0,0);
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0px;
-	z-index: 100;
-	overflow: hidden;
-	flex-direction: column;
-
-}
-
-h2 {
-	position: relative;
-	font-family: $sigmar;
-	font-size: 20px;
-	text-align: center;
-	mix-blend-mode: screen;
-	text-transform: uppercase;
-	font-weight: 900;
-	line-height: 1;
-
-	font-size: 20px;
-	// letter-spacing: 8px;
-	-moz-transform: skew(8deg, -8deg);
-	-webkit-transform: skew(8deg, -8deg);
-	-o-transform: skew(8deg, -8deg);
-	-ms-transform: skew(8deg, -8deg);
-	transform: skew(8deg, -8deg);
-	line-height: 1.1;
-}
-
-
-.inclusion{
-	// color: #0093D3;
-	color: white;
-}
-
-.collaboration{
-	// color: #FFF10D;
-	color: white;
-
-}
-
-.empowerment {
-	// color: #CC016B;
-	color: white;
-
-}
-
-	  
-@media only screen and (min-width: 768px) {
-
-	.overlay-desc {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	h2 {
-		font-size: 100px;
-		// letter-spacing: 8px;
-		-moz-transform: skew(8deg, -8deg);
-		-webkit-transform: skew(8deg, -8deg);
-		-o-transform: skew(8deg, -8deg);
-		-ms-transform: skew(8deg, -8deg);
-		transform: skew(8deg, -8deg);
-		line-height: 1.1;
-	}
-
-}
-
-// NEWWWWW
-
 .hero {
 	display: flex;
 	align-items: center;
@@ -115,23 +6,18 @@ h2 {
 	width: 100%;
 	height:100vh;
 	overflow: hidden;
-
 }
 
 .new-video {
-
-position: absolute;
-  top: 50%; 
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%; 
-  min-height: 100%; 
-  width: auto; 
-  height: auto;
-  -webkit-filter: saturate(1.2);
-  filter: saturate(1.2);
-
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100%; 
+	min-height: 100%; 
+	width: auto; 
+	height: auto;
 }
 
 .new-logo {
@@ -139,16 +25,12 @@ position: absolute;
     height: 275px;
     border-radius: 50%;
     border: 5px solid white;
-	// background-image: linear-gradient(pink, gold), url("/img/logo.svg");
 	background-image: linear-gradient(white,whitesmoke), url("/img/logo.svg");
     background-blend-mode: overlay;
-    background-position: center;
     background-size: contain;
     z-index: 200;
-    margin-top: 1em;
-	@include spin;
-	z-index: 100;
 	mix-blend-mode: screen;
+	@include spin;
 }
 
 @include spin-keyframes;
