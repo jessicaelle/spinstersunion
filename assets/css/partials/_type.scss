@@ -1,21 +1,14 @@
-h2, h3, p, a {
+p, a {
     font-family: $maven;
 }
 
 p {
     font-size: 16px;
     color: $dark;
+    line-height: 1.2;
 }
 
 a {
-    color: white;
-}
-
-h1, h3 {
-    font-weight: 700;
-    color: white;
-}
-
-h2 {
-    font-size: 100px;
+    text-decoration: none;
+    margin: .5em;
 }
